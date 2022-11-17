@@ -1,0 +1,21 @@
+<html>
+<body>
+<p><h1>İŞ YERLERİM</p><h1>
+<p id="demo"></p>
+
+<script>
+let a ="sırasıyla işyerlerim aşağıdadır: ";
+let b =["sultan fatih koleji","mar oto","şefkat koleji","mavigün koleji"];
+let c = `<h2>${a}</h2><ul>`;
+for  (const x of b) {
+
+c +=`<li>${x}</li>`;
+
+}
+document.getElementById("demo").innerHTML= c;
+</script>
+
+
+
+</body>
+</html>

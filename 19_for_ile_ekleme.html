@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>merhaba</h1>
+<h2>şimdi for döngüsü ile diziye ekleme yapalım</h2>
+<p id="demo"></p>
+<script>
+const fruits=["apple","orange","banana"];
+fruits[7]="strawberry";
+let listemiz ="<ul>";
+for(i=0; i<fruits.length; i++){
+listemiz += fruits[i]+"<br>";
+
+} 
+document.getElementById("demo").innerHTML=listemiz;
+
+
+
+</script>
+
+
+</body>
+</html>

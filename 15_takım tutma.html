@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>www.bilisimogretmeni.com</title>
+<script type="text/javascript" language="javascript">
+function ekranayaz()
+{
+for (i=0;i<document.secim.takim.length;i++)
+  {
+  if (document.secim.takim[i].checked)
+    {//www.bilisimogretmeni.com
+    document.secim.degisken.value = document.secim.takim[i].value + " ";
+    }
+  }
+}
+</script>
+</head>
+<body>
+<form name="secim">
+Hangi Takımı Tutuyorsunuz<br />
+<input type="radio" name="takim" value="Gs" />Galatasaray<br />
+<input type="radio" name="takim" value="Fb"/>Fenerbahçe<br />
+<input type="radio" name="takim" value="Bjk"/>Beşiktaş<br />
+<input type="radio" name="takim" value="Ts"/>Trabzonspor<br />
+<input type="button"  value="Gönder"  onclick="ekranayaz()"/>
+<input type="reset" value="Temizle" /><br />
+Tuttuğunuz Takım=<input type="text" name="degisken" />
+ </hr>
+
+<p></p><select multiple id="sehirID"  style="width:200px">
+    <option value="corum">Çorum</option>
+    <option value="ankara">Ankara</option>
+    <option value="mersin">Mersin</option>
+    <option value="trabzon">Trabzon</option>
+    <option value="malatya">Malatya</option>
+ 
+<input type="button" id="button" value="Seçili Göster">
+</select>
+</form>
+</body>
+</html>

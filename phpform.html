@@ -1,0 +1,15 @@
+<html>
+<body>
+<form method="post" action="<?php
+echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+</br>name: <input type="text" name="name"></br>
+</br>E-mail:  <input type="email" name="e_mail"></br>
+</br>website: <input type="url" name="website"></br>
+<p>comment:  <textarea name="comment" r0w="5" cols="40"></textarea>
+<p></br></textarea>Gender: <input type="radio" value="male">male
+<input type="radio" value="female">female
+<input type="radio" value="other">other</br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

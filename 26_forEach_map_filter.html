@@ -1,0 +1,32 @@
+<html>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+const myNumbers=[1,3,6,34,84];
+let sirala="";
+myNumbers.forEach(myFunction);
+document.getElementById("demo1").innerHTML=sirala;
+function myFunction(value){
+sirala += value +"<br>";
+}
+let ikiilecarp="";
+myNumbers.map(myFunction2);
+document.getElementById("demo2").innerHTML=ikiilecarp;
+function myFunction2(value){
+ikiilecarp += value*2+"<br>";
+}
+
+
+const biggerthan3=myNumbers.filter(myFunction3);
+document.getElementById("demo3").innerHTML=biggerthan3;
+function myFunction3(value){
+ return value > 3;
+}
+
+
+</script>
+
+</body>
+</html>

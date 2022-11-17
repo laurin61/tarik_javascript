@@ -1,0 +1,38 @@
+ 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tasarim Kodlama</title>
+</head>
+ 
+<body>
+	<select id="secim" multiple size="10">
+		<option value="Futbol">Futbol</option>
+		<option value="Basketbol">Basketbol</option>
+		<option value="Voleybol">Voleybol</option>
+		<option value="Yüzme">Yüzme</option>
+		<option value="Güreş">Güreş</option>
+	</select>
+	<script>
+	
+		var secim=document.querySelector("#secim");
+		
+		secim.onchange=function(event)
+		{
+			//select içindeki tüm elemanları seçiyoruz.
+			var liste= this && this.options;
+			
+			//tüm liste elemanları üzerinde dönüyor.
+			for(var i=0;i<liste.length;i++)
+			{
+				if(liste[i].selected) //seçili olanı listeleyecek
+				{
+					alert(liste[i].value);	
+				}
+			}
+		}
+		
+	</script>	
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+
+
+
+/*
+const cars=["volvo","audi","seat","skoda"];
+let sirala="";
+cars.forEach(myFunction);
+function myFunction(value){
+sirala += value+"<br>";
+
+}
+document.getElementById("demo").innerHTML=sirala;
+*/
+
+
+/*
+const cars=["volvo","audi","seat","skoda"];
+let sirala = "";
+for (let x in cars){
+ sirala += cars[x] + "<br>";
+
+}
+document.getElementById("demo").innerHTML=sirala;
+*/
+
+
+// const cars=["volvo","audi","seat","skoda"];
+// let sirala="";
+// for (let x of cars){
+//  sirala += x +"<br>";
+// }
+// document.getElementById("demo").innerHTML=sirala;
+
+
+// //ÖRNEK
+ const text = "saadet";
+ let yaz="";
+ for (let x of text){
+ yaz +=  x + "<br>";   
+  }
+ document.getElementById("demo2").innerHTML=yaz+"<hr>";
+
+const mynumbers = new Set();
+mynumbers.add("ali");
+mynumbers.add("salih");
+mynumbers.add("vali");
+mynumbers.add("kırcali");
+document.getElementById("demo3").innerHTML=mynumbers.size+"<hr>";
+
+//bunu bir de for.Each ile yapalım
+let sira="";
+mynumbers.forEach (function(value){
+    sira += value +"<br>";
+})
+document.getElementById("demo4").innerHTML=sira+"<hr>";
+
+
+//burada mesela [key,value] gibib ikili değer döndürme istersek for.Each ile;
+// örneğin bir key,value değerli bir map döndürelim;
+identities=new Map([["id",345345],["yas",34],["yil",1982]]);
+let ter="";
+for(const x of identities.entries()){
+ter += x +"<br>";
+}
+document.getElementById("demo5").innerHTML=ter;
+//entries yerine valeu yazarsan değerleri verir
+//ky yazarsan keyleri verir
+
+</script>
+
+</body>
+</html>

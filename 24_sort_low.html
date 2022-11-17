@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="demo1">the lower number is  <span id = "demo2"></span></p>
+<p> the highest number is <span id="demo3"></span></p>
+<script>
+const sayilar= [1,20,45,5,7,12];
+let lower=sayilar.sort(function(a,b) {return a-b;
+});
+document.getElementById("demo2").innerHTML=lower[0];
+let highest=sayilar.reverse(function(a,b) {return a-b;
+});
+document.getElementById("demo3").innerHTML=highest[0];
+
+
+</script>
+</body>
+</html>

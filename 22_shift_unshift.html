@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1>pop() son elemanı siler, push("elma") ise elma elamanını ekler</h1>
+<p id="demo"></p>
+<script>
+const mylessons = ["physic","math","history","geograpy"];
+//document.getElementById("demo").innerHTML=mylessons;
+//mylessons.shift();
+//document.getElementById("demo").innerHTML=mylessons;
+//math,history,geograpy.....   döndürür
+document.getElementById("demo").innerHTML=mylessons;
+mylessons.shift();
+document.getElementById("demo").innerHTML=mylessons;
+//math,history,geograpy  ......döndürür
+mylessons.unshift("kalem");
+document.getElementById("demo").innerHTML=mylessons;
+// kalem,math,history,geograpy   başına yeni atanan kalem i ekler
+
+
+
+</script>
+</body>
+</html>

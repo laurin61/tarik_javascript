@@ -1,0 +1,52 @@
+<html>
+<head>
+   <style type="text/css">
+  #kimlik {width:200px;}   
+  .gönderme {
+    display: block;
+    float: left;
+    /* width: 153px; */
+    margin-right: 10px;
+   
+  
+
+    </style>
+
+</head>
+
+<body>
+<script type="text/javascript">
+    var isim="tarik";
+    var soyisim="senturk";
+if (isim=="tarik") 
+  if(soyisim=="senturk")
+    {document.write("adınızı ve soyadınızı doğru girdiniz");}
+    else 
+    {document.write("soyadınızı yanlış girdiniz");}
+else 
+ {document.write("adınızı ve soyadınızı yanlış girdiniz");}    
+
+
+</script>
+<form id="my_form">
+<p><br/>merhaba televole
+<p><div id="kimlik"> Adınızı Giriniz <input type="text" name="adınız">
+<p> Soyadınızı Giriniz <input type="text" name="adınız">
+<p><p><div class="gönderme"><input type="button" value="gönder"></div> 
+<div class="gönderme"><input type="button" value="temizle" style="float:right" height: 26px;" onclick="myFunction();" ></div>
+<p>
+</form>
+  
+
+
+<br/>  
+</body>
+</html>
+
+<script type="text/javascript">
+  function myFunction() {
+    document.getElementById("my_form").reset();
+
+  }
+  </script>
+

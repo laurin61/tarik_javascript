@@ -1,0 +1,16 @@
+<html>
+<body>
+<h1>pop() son elemanı siler, push("elma") ise elma elamanını ekler</h1>
+<p id="demo"></p>
+<script>
+const mylessons = ["physic","math","history","geograpy"];
+const mycars=["audi,bmw"];
+const myfruits=["apple","banana","strawberry"];
+document.getElementById("demo").innerHTML=mylessons.concat(mycars);
+// physic,math,history,geograpy,audi,bmw...............iki diziyi birleştirir
+document.getElementById("demo").innerHTML=mylessons.concat(mycars,myfruits);
+//physic,math,history,geograpy,audi,bmw,apple,banana,strawberry.....döndürdüğü gibi sayısız ekleme yapılabilir.
+
+</script>
+</body>
+</html>

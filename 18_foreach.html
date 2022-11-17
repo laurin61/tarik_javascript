@@ -1,0 +1,21 @@
+<html>
+<body>
+<p>aynı şeyi bu sefer de forEach() döngüsü ile yapabiliriz</p>
+<p id = "demo"></p>
+<script>
+const cars=["audi","volvo","BMW","Citroen"];
+let sayi= cars.length;
+let liste= "<ul>";
+cars.forEach(myFunction);
+document.getElementById("demo").innerHTML= liste;
+function myFunction(value){
+liste += "<li>"+value+"<li>";
+    
+}
+
+
+
+
+</script>
+</body>
+</html>
