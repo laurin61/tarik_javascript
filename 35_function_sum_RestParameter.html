@@ -1,0 +1,20 @@
+<html>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+
+function sum(...args)  {
+    let sum=0;
+    for (let x of args)
+    sum += x;
+   return sum;}
+document.getElementById("demo1").innerHTML=sum(1,2,3,34,3434,66,6,6);
+
+
+
+</script>
+
+</body>
+</html>

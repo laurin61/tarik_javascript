@@ -1,0 +1,33 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+// function findmin() {
+// let findmin= +Infinity;
+// for(let i=0; i < arguments.length; i++) {
+//  if (findmin > arguments[i] ) { findmin = arguments[i] }
+
+// }
+//  return findmin;
+// }
+// document.getElementById("demo").innerHTML=findmin(1,2,4);
+
+
+//ŞİMDİ DE BÜYÜK SAYIYI BULALIM
+function findmax() {
+    let findmax = -Infinity;
+    for(let i=0; i<arguments.length; i++) {
+    if (arguments[i]>findmax) {
+        findmax=arguments[i];
+    }}
+    return findmax;
+}
+
+document.getElementById("demo").innerHTML=findmax(1,2,3,433,121212);
+
+
+</script>
+</body>
+</html>

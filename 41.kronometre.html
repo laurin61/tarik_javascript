@@ -1,0 +1,24 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var saniye=0;
+
+function kronometre() {
+ var dak=Math.round(saniye/60);
+ var saat=Math.round(saniye/3600);
+ var dakika= dak%60;
+ var san=saniye%60;
+
+ document.write(saat+" : "+dakika +" : "+san);
+ document.write("<br/>");
+ saniye ++;
+
+}
+setInterval("kronometre()",1000)
+
+
+
+</script>
+</body>
+</html>

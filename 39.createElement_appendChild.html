@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Add a new HTML Element</h2>
+<p>Add a new HTML Element.</p>
+
+<div id="div1">
+<p id="p1">This is a paragraph</p>
+<p id="p2">This is another paragraph</p>
+</div>
+
+<script>
+const cont = document.createElement("p");
+const text = document.createTextNode("This is new");
+cont.appendChild(text);
+const alfa = document.getElementById("div1");
+alfa.appendChild(cont);
+
+</script>
+
+</body>
+</html>

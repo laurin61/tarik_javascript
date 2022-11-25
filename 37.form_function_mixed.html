@@ -1,0 +1,22 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+let x = document.forms["myform"]["ad"].value;
+if (x == "") {
+ alert ("adınız boş bırakılamaz !");
+  return false;
+}
+}
+</script>
+<form name="myform" action="localhost/alinanform1.php" 
+onsubmit="return myFunction()" method="post" >
+adınız: <input type="text" name="ad"  >
+<input type="submit" value="gönder">
+</form>
+</body>
+</html>

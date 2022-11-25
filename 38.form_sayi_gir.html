@@ -1,0 +1,24 @@
+<html>
+<body>
+<p id="demo">JAVASCRİPT</p>
+<p id="demo1">lütfen 1 ile 10 arasında bir sayı giriniz</p>
+<input id="numb" name="sayi">
+<button type="button"  onclick="myFunction()" > gönder </button>
+<P id="demo3"></P>
+
+<script>
+function myFunction() {
+let x= document.getElementById("numb").value;
+let text;
+if ( isNaN(x) || x < 1 || x > 10 ) {
+  text= "invalid number !";
+} else {
+
+  text= "input ok !";
+}
+document.getElementById("demo3").innerHTML=text;
+}
+</script>
+</form>
+</body>
+</html>
